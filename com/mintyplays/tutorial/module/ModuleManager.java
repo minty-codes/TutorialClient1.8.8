@@ -1,5 +1,6 @@
 package com.mintyplays.tutorial.module;
 
+import com.mintyplays.tutorial.module.combat.*;
 import com.mintyplays.tutorial.module.movement.*;
 import com.mintyplays.tutorial.module.player.*;
 import com.mintyplays.tutorial.module.render.*;
@@ -11,6 +12,8 @@ public class ModuleManager {
 
     public ModuleManager() {
         // COMBAT
+        modules.add(new KillAura());
+        modules.add(new AntiBot());
 
         // MOVEMENT
         modules.add(new Sprint());
