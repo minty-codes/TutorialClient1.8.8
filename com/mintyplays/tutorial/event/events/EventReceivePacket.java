@@ -7,7 +7,7 @@ public class EventReceivePacket extends Event {
     private Packet packet;
 
     public EventReceivePacket(Packet packet) {
-        packet = packet;
+        this.packet = packet;
     }
 
     public Packet getPacket() {
