@@ -1,0 +1,19 @@
+package com.mintyplays.tutorial.event.events;
+
+import com.mintyplays.tutorial.event.Event;
+import net.minecraft.network.Packet;
+
+public class EventReceivePacket extends Event {
+    private Packet packet;
+
+    public EventReceivePacket(Packet packet) {
+        packet = packet;
+    }
+
+    public Packet getPacket() {
+        return packet;
+    }
+    public void setPacket(Packet packet) {
+        this.packet = packet;
+    }
+}
