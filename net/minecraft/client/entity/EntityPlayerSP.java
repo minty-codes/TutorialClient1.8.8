@@ -919,4 +919,35 @@ public class EntityPlayerSP extends AbstractClientPlayer
             this.sendPlayerAbilities();
         }
     }
+
+    public float getSpeed() {
+        float vel = (float)Math.sqrt(this.motionX * this.motionX + this.motionZ * this.motionZ);
+        return vel;
+    }
+
+    public void setSpeed(float speed) {
+        this.motionX = (-(Math.sin(getDirection()) * speed));
+        this.motionZ = (Math.cos(getDirection()) * speed);
+    }
+
+    public float getDirection() {
+        float var1 = this.rotationYaw;
+
+        if(this.moveForward < 0)
+            var1 += 180F;
+        float forward = 1F;
+        if(this.moveForward < 0)
+            forward = -.5F;
+        else if(moveForward > 0)
+            forward = .5F;
+        else
+            forward = 1F;
+
+        if(moveStrafing > 0)
+            var1 -= 90F * forward;
+        if(moveStrafing < 0)
+            var1 += 90F * forward;
+        var1 *= .017453292F;
+        return var1;
+    }
 }

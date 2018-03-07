@@ -5,7 +5,7 @@ import com.mintyplays.tutorial.event.Event;
 public class EventPreMotionUpdate extends Event {
     private float yaw, pitch;
     private boolean ground;
-    private double x, y, z;
+    public double x, y, z;
 
     public EventPreMotionUpdate(float yaw, float pitch, boolean ground, double x, double y, double z) {
         this.yaw = yaw;

@@ -19,9 +19,12 @@ public class ModuleManager {
         modules.add(new Sprint());
         modules.add(new Fly());
         modules.add(new Step());
+        modules.add(new LongJump());
+        modules.add(new Speed());
 
         // RENDER
         modules.add(new Fullbright());
+        modules.add(new ClickGUI());
 
         // PLAYER
         modules.add(new NoFall());
