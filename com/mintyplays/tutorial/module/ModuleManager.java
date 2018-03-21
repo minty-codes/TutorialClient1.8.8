@@ -14,6 +14,8 @@ public class ModuleManager {
         // COMBAT
         modules.add(new KillAura());
         modules.add(new AntiBot());
+        modules.add(new AutoArmor());
+        modules.add(new Criticals());
 
         // MOVEMENT
         modules.add(new Sprint());
@@ -21,6 +23,7 @@ public class ModuleManager {
         modules.add(new Step());
         modules.add(new LongJump());
         modules.add(new Speed());
+        modules.add(new Phase());
 
         // RENDER
         modules.add(new Fullbright());
