@@ -2,12 +2,12 @@ package net.minecraft.util;
 
 public class AxisAlignedBB
 {
-    public final double minX;
-    public final double minY;
-    public final double minZ;
-    public final double maxX;
-    public final double maxY;
-    public final double maxZ;
+    public double minX;
+    public double minY;
+    public double minZ;
+    public double maxX;
+    public double maxY;
+    public double maxZ;
 
     public AxisAlignedBB(double x1, double y1, double z1, double x2, double y2, double z2)
     {
@@ -117,6 +117,16 @@ public class AxisAlignedBB
     public AxisAlignedBB offset(double x, double y, double z)
     {
         return new AxisAlignedBB(this.minX + x, this.minY + y, this.minZ + z, this.maxX + x, this.maxY + y, this.maxZ + z);
+    }
+
+    public AxisAlignedBB offsetAndUpdate(double d1, double d2, double d3) {
+        this.minX += d1;
+        this.minY += d2;
+        this.minZ += d3;
+        this.maxX += d1;
+        this.maxY += d2;
+        this.maxZ += d3;
+        return this;
     }
 
     /**
