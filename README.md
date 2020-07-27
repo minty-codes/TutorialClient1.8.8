@@ -5,4 +5,5 @@ The source code of a client being created in a tutorial by MintyCodes.<br>
 [![Episode #3](http://mintyplays.com/mintycodes/thumbnail3.png)](https://www.youtube.com/watch?v=ZwT7ax4X3lo)<br>
 [![Episode #4](http://mintyplays.com/mintycodes/thumbnail4.png)](https://www.youtube.com/watch?v=N4doza1_XLo)<br>
 [![Episode #5](http://mintyplays.com/mintycodes/thumbnail4.png)](https://www.youtube.com/watch?v=lhEzBWNP3hE)<br>
-[![Episode #6](http://mintyplays.com/mintycodes/thumbnail4.png)](https://www.youtube.com/watch?v=6VKopTfCu-w)
+[![Episode #6](http://mintyplays.com/mintycodes/thumbnail5.png)](https://www.youtube.com/watch?v=6VKopTfCu-w)<br>
+[![Episode #7](http://mintyplays.com/mintycodes/thumbnail7.png)](https://www.youtube.com/watch?v=vopCc0EZLFU)
