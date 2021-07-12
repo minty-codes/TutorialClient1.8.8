@@ -7,7 +7,7 @@ public class EventSendPacket extends Event {
     private Packet packet;
 
     public EventSendPacket(Packet packet) {
-        packet = null;
+        this.packet = null;
         setPacket(packet);
     }
 
