@@ -49,11 +49,11 @@ public class Criticals extends Module {
                         mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer.C04PacketPlayerPosition(mc.thePlayer.posX, mc.thePlayer.posY, mc.thePlayer.posZ, false));
                         mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer());
                     }
+		    if(mode.equalsIgnoreCase("MiniJump")) {
+			mc.thePlayer.jump();
+                	mc.thePlayer.motionY -= .30000001192092879;
+            	    }
                 }
-            }
-            if(mode.equalsIgnoreCase("MiniJump")) {
-                mc.thePlayer.jump();
-                mc.thePlayer.motionY -= .30000001192092879;
             }
         }
     }
