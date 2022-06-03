@@ -14,7 +14,7 @@ public class NoFall extends Module {
 
     @EventTarget
     public void onUpdate(EventUpdate event) {
-        if(mc.thePlayer.fallDistance > 2F)
+        if(mc.thePlayer.fallDistance > 3F)
             mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer(true));
     }
 }

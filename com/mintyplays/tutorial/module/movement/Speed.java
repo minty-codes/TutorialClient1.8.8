@@ -31,11 +31,13 @@ public class Speed extends Module {
     public void onPre(EventPreMotionUpdate event) {
         if(isOnLiquid())
             return;
-        if(mc.thePlayer.onGround && (mc.thePlayer.moveForward != 0 || mc.thePlayer.moveStrafing != 0)) {
-            if(mc.thePlayer.ticksExisted % 2 != 0)
-                event.y += .4;
-            mc.thePlayer.setSpeed(mc.thePlayer.ticksExisted % 2 == 0 ? .45F : .2F);
-            mc.timer.timerSpeed = 1.095F;
+        if(Tutorial.instance.settingsManager.getSettingByName("Criticals Mode").getValString().equalsIgnoreCase("Y-Port")) {
+            if(mc.thePlayer.onGround && (mc.thePlayer.moveForward != 0 || mc.thePlayer.moveStrafing != 0)) {
+                if(mc.thePlayer.ticksExisted % 2 != 0)
+                    event.y += .4;
+                mc.thePlayer.setSpeed(mc.thePlayer.ticksExisted % 2 == 0 ? .45F : .2F);
+            	mc.timer.timerSpeed = 1.095F;
+	       }
         }
     }
 
